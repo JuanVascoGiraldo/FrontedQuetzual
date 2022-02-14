@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respuestas</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/sesionUsuario.css">
+    <link rel="stylesheet" href="./CSS/star-rating-svg.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="./JS/jquery.star-rating-svg.js"></script>
+    <link rel="icon" type="image/png" href="./img/icono.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <img src="./img/logotipo.png" alt="Logotipo oficial de Quetzual" class="logo">
+            <article>Respuestas</article>
+            <button class="cs" onclick="cerrarSesion()">Cerrar sesión</button>
+        </nav>
+        <div class="menu">
+            <a href="./sesionUsuario.html">
+                <img src="./img/bxs-left-arrow.svg" alt="Imagen"> Volver
+            </a>
+        </div>
+    </header>
+    
+    <div class="main_container">
+        <div class="mini_header">
+            <h2>Dr.Maya</h2>
+            <h2>12-02-2022 </h2>
+        </div>
+        <div class="sub_header">
+                <h2>
+                        Calificada con 4<p class="star">★</p> </h2>
+                </h2>
+        <h2>4.5<p class="star">★</p> </h2>
+        </div>
+        <div class="respuesta">
+            <div class="respuestas">
+                <h3>Los principales metodos son el condon, el diu y el implante </h3>
+            </div>
+            <img src="./img/bx-plus-medical.svg" alt="">
+        </div>
+        <div class="calificacion">
+            <div class="contenedor">
+                <div class="p">¿Te ha resultado útil esta solución? </div>
+                <div class="Estrellas" id="Estrellas" onclick="calificar(1)"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main_container">
+        <div class="mini_header">
+            <h2>Dr.Giron</h2>
+            <h2>12-02-2022 </h2>
+        </div>
+        <div class="sub_header">
+                <h2>
+                        Calificada con 2<p class="star">★</p> </h2>
+                </h2>
+        <h2>4.5<p class="star">★</p> </h2>
+        </div>
+        <div class="respuesta">
+            <div class="respuestas">
+                <h3>Tambien hay metodos permantentes tanto para hombres o mujeres que son irrevencibles </h3>
+            </div>
+            <img src="./img/bx-plus-medical.svg" alt="">
+        </div>
+        <div class="calificacion">
+            <div class="contenedor">
+                <div class="p">¿Te ha resultado útil esta solución? </div>
+                <div class="Estrellas" id="Estrellas" onclick="calificar(1)"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalR">
+        <div class="card">
+            <article>
+                <b>Tu Calificación ha sido registrada</b>
+            </article>
+            <img src="./img/check-square-solid-240.png" alt="" onclick="crm()" class="cubitoVerde">
+        </div>
+    </div>
+    <script src="./JS/validar.js"></script>
+    <script src="./JS/sweetAlert.js"></script>
+    <script src="./JS/funcionModal.js"></script>
+</body>
+
+</html>

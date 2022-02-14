@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/sesionAdmin.css">
+    <link rel="icon" type="image/png" href="./img/icono.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+</head>
+
+<body>
+    <aside>
+        <img src="./img/logotipo.png">
+        <button onclick="enviarAdminDoctores()">Administrar doctores</button>
+        <button onclick="enviarCuentaAdmin()">Cuenta</button>
+        <button onclick="enviarRankingAdmin()">Ranking</button>
+        <button class="cs" onclick="cerrarSesion()">Cerrar sesión</button>
+    </aside>
+    <h1>Bienvenido Administrador</h1>
+    <div>Estos son los datos más recientes desde la última vez</div>
+    <div class="bar">
+        <canvas id="admChart"></canvas>
+    </div>
+    <script src="./JS/redirigir.js"></script>
+    <script>
+        var ctx = document.getElementById('admChart').getContext('2d');
+        var docChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["ETS","Anticonceptivos" ,"Embarazo" ,"Salud sexual femenina" ,"Salud sexual masculina"],
+                datasets: [{
+                    label: 'Puntos',
+                    data: [2, 3,4, 5, 6],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                aspectRatio: 1,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

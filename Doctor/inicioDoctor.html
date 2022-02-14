@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/inicioDoctor.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="icon" type="image/png" href="./img/icono.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <img src="../img/logotipo.png" alt="Logotipo oficial de Quetzual" class="logo">
+            <article>Estadisticas</article>
+            <button class="cs" onclick="cerrarSesion()">Cerrar sesión</button>
+        </nav>
+        <div class="menu">
+            <a href="./cuentaDoctor.html">
+                <img src="./img/bx-user-circle.svg" width="40" alt="Signo de pregunta" class="svg"> Mi cuenta
+            </a>
+            <a href="./preguntasPendientes.html">
+                <img src="./img/bx-edit.svg" alt="Imagen "> Gestionar preguntas
+            </a>
+            <a href="./ranking.html">
+                <img src="./img/bx-line-chart.svg" alt="Signo de editar" class="svg"> Ranking
+            </a>
+        </div>
+    </header>
+    <div>
+        <h1>Bienvenido Doctor</h1>
+        <p>Estos son los datos más recientes desde la ultima vez</p>
+    </div>
+    <div class="bar">
+        <canvas id="docChart"></canvas>
+    </div>
+    <script> 
+    var ctx = document.getElementById('docChart').getContext('2d');
+    var docChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["ETS","Anticonceptivos" ,"Embarazo" ,"Salud sexual femenina" ,"Salud sexual masculina"],
+            datasets: [{
+                label: 'Puntos',
+                data: [2, 3,4, 5, 6],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 1,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
+    <script src="./JS/redirigir.js"></script>
+</body>
+
+</html>

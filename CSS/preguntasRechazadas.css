@@ -1,0 +1,51 @@
+
+
+
+
+.cardR {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px #0000008a;
+    width: 95%;
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+    cursor: default;
+    border: 1px solid black;
+}
+
+
+.mini_headerR {
+    background-color: #AC2727;
+    text-align: center;
+    padding: 5px 0;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.h2 {
+    font-weight: 400;
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.preguntaR {
+    display: flex;
+    margin: 30px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.preguntasR {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.602);
+    margin: 20px;
+}
