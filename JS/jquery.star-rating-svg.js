@@ -353,7 +353,7 @@ function calificar(id_pres , id_ress, ree){
 
 function mandar(punt){
     setTimeout(function() {
-            location.href = './CalificarRespuesta?id_pre='+id_pre+'&&id_res='+id_res+'&&cal='+punt+'&&re='+re;
+            //location.href = './CalificarRespuesta?id_pre='+id_pre+'&&id_res='+id_res+'&&cal='+punt+'&&re='+re;
         }, 1000);
     
 }
