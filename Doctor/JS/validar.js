@@ -199,7 +199,8 @@ function ResPregunta() {
     } else {
         document.getElementById('modalR').classList.add(isVisible);
         setTimeout(function() {
-            document.Rpregunta.submit();
+            //document.Rpregunta.submit();
+            location.href = 'preguntasPendientes.html'
         }, 1000);
         
     }
@@ -245,7 +246,8 @@ function agregarRespuestares() {
     } else {
         document.getElementById('modalR').classList.add(isVisible);
         setTimeout(function() {
-          document.responder.submit();  
+          //document.responder.submit();
+          location.href = 'respuestasPregunta.html'
         }, 1000);
         
     }

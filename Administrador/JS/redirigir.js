@@ -1,5 +1,5 @@
 function cerrarSesion() {
-    location.href = '../CerrarSesion';
+    location.href = '../index.html';
 }
 
 function enviarConsultarHistorico() {

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Inicio</title>
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/estilos.css">
     <link rel="icon" type="image/png" href="./img/icono.png">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="alinear">
@@ -59,26 +59,28 @@
         </div>
         <div class="modal" id="modalR1">
             <div class="card">
-                <form action="RegistrarUsuario" name="registrar">
+                <form action="" name="recuperar">
                     <label for="" class="article">Recuperar Contraseña</label><br>
                     <hr class="linea">
                     <label for="" class="article">Ingresa el correo de la cuenta</label><br>
-                    <input type="text" name="correo" id="correo" placeholder="Correo electronico" class="input">
+                    <input type="text" name="email" id="email" placeholder="Correo electronico" class="input">
                     <br>
-                   <button type="button" class="submit" onclick="registrarr()" id="enviar">Enviar</button>
+                   <button type="button" class="submit" onclick="ReContra()" id="enviar">Enviar</button>
                 </form>
+                <!--
                 <div class="conf">
                     El correo de Confirmación se ha enviado correctamente
                 </div>
                 <div class="rech">
                     El correo no se ha encontrado
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
     <footer class="footer ">
         Tecnologia administrativa creativa y operadora de software
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./JS/validar.js"></script>
     <script src="./JS/sweetAlert.js"></script>
     <script src="./JS/funcionModal.js"></script>

@@ -63,10 +63,10 @@
                 <button class="ch" onclick="modi('<%=usu.getId_usu()%>')">Consultar historico</button>
             </div>
         </div>
-            <div class="vacio">
+           <!-- <div class="vacio">
                 <p>No hay Doctores Registrados Actualmente</p>
                 <img src="./img/sindoc.svg">
-            </div>
+            </div>-->
         
     </div>
     <div class="modal" id="modalR">
@@ -134,20 +134,23 @@
     </div>
     <script>
         function Deshabilitar(){
-           document.deshabilitar.submit();
+           //document.deshabilitar.submit();
+           location.href = 'adminDoctores.html'
         }
         function mandar(id){
             document.getElementById("id").value = id;
         }
         function modi(id){
-             location.href = 'consultarHistorico.jsp?id='+id;
+             //location.href = 'consultarHistorico.jsp?id='+id;
+             location.href = 'consultarHistorico.html'
         }
         function mandardatos(id, nombre, email, id_gen, fecha){
-            document.getElementById("fechad").value = fecha;
-            document.getElementById("nombred").value= nombre;
-            document.getElementById("correod").value = email;
+            //document.getElementById("fechad").value = fecha;
+            document.getElementById("nombred").value= 'GironFlores';
+            document.getElementById("correod").value = 'giron@gmail.com';
             document.getElementById("idd").value = id;
-            var id_genn = parseInt(id_gen);
+            //var id_genn = parseInt(id_gen);
+            var id_genn = 1;
             if(id_genn == 1){
                 document.getElementById("pre").selected = true;
             }else if(id_genn == 2){

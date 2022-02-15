@@ -36,6 +36,6 @@ function crm() {
 function crm2() {
     document.getElementById('modalG').classList.remove(isVisible);
     setTimeout(function() {
-        location.href = '../preguntasPendientes.jsp';
+        location.href = '../preguntasPendientes.html';
     }, 1500);
 }

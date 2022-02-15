@@ -110,7 +110,8 @@ function registrarr() {
             text: 'Las contraseñas no coinciden'
         });
     } else if (validarfecha(fecha) && validarnombre(nombre) && validarcorreo(email) && validarcontrasena(pass)) {
-        document.registrar.submit();
+        //document.registrar.submit();
+        location.href = 'index.html'
     }
 }
 
@@ -118,19 +119,20 @@ function iniciars() {
     var email = document.iniciar.email.value;
     var pass = document.iniciar.pass.value;
     if (validarcorreo(email) && validarcontrasena(pass)) {
-        document.iniciar.submit();
+        //document.iniciar.submit();
+        location.href = 'distribución.html'
     }
 }
 
 function modificarcuenta() {
     var fecha = document.getElementById('fecha').value;
-    var email = document.getElementById('correo').value;
     var nombre = document.getElementById('nombre').value;
-    if (validarfecha(fecha) && validarnombre(nombre) && validarcorreo(email)) {
+    if (validarfecha(fecha) && validarnombre(nombre)) {
         
         //document.modcuenta.submit;
         setTimeout(function() {
-            document.modicuenta.submit();
+            //document.modicuenta.submit();
+            location.href= 'sesionUsuario.html'
         }, 2000);
     }
 }
@@ -149,7 +151,8 @@ function modificarContra() {
        
         //document.modcontra.submit;
         setTimeout(function() {
-            document.ModContra.submit();
+            //document.ModContra.submit();
+            location.href= 'sesionUsuario.html'
         }, 2000);
     }
 }
@@ -157,14 +160,16 @@ function modificarContra() {
 function HPregunta() {
     var pregunta = document.getElementById("pregunta").value;
     if (validarPregunta(pregunta)) {
-        document.HacerP.submit();
+        //document.HacerP.submit();
+        location.href= 'preguntasSimilares.html'
     }
 }
 
 function MPregunta() {
     var pregunta = document.getElementById("Mpregunta").value;
     if (validarPregunta(pregunta)) {
-       document.ModificarPre.submit();
+       //document.ModificarPre.submit();
+       location.href = 'preguntasPendientes.html'
     }
 }
 
@@ -176,7 +181,7 @@ function RechaPregunta() {
             title: 'Correcto',
             text: 'Se ha rechazado la pregunta con exito'
         });
-        document.rechapre.submit;
+        //document.rechapre.submit;
     }
 }
 
@@ -189,6 +194,49 @@ function ResPregunta() {
             title: 'Correcto',
             text: 'Se ha respondido la pregunta con exito'
         });
-        document.repre.submit;
+        //document.repre.submit;
+    }
+}
+
+function ReContra(){
+    var correo = document.recuperar.email.value;
+    if(validarcorreo(correo)){
+        Swal.fire({
+            icon: 'success',
+            title: 'Correcto',
+            text: 'Se ha enviado el correo para recuperar la contraseña con exito'
+        })
+        setTimeout(function (){
+            location.href = 'recuperarcontra.html'
+        }, 1000)
+    }
+}
+
+function ModCorreo(){
+    var correo = document.modemail.correo.value;
+    if(validarcorreo(correo)){
+        Swal.fire({
+            icon: 'success',
+            title: 'Correcto',
+            text: 'Se ha enviado el correo para modificarlo con exito con exito'
+        })
+    }
+}
+
+function RecuperarContra(){
+    var pass = document.getElementById('contra').value;
+    var confpas = document.getElementById('confcontra').value;
+    if (pass != confpas) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No coinciden las nuevas contraseñas'
+        });
+    } else if (validarcontrasena(pass) && validarcontrasena(antpass)) {
+        //document.modcontra.submit;
+        setTimeout(function() {
+            //document.ModContra.submit();
+            location.href= 'index.html'
+        }, 2000);
     }
 }

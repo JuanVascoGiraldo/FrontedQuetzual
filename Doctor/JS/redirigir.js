@@ -1,15 +1,15 @@
 function enviarRechazarPregunta() {
-    location.href = './rechazarPregunta.jsp';
+    location.href = './rechazarPregunta.html';
 }
 
 function enviarResponderPregunta() {
-    location.href = './responderPregunta.jsp';
+    location.href = './responderPregunta.html';
 }
 
 function enviarGestionarPreguntas() {
-    location.href = './preguntasPendientes.jsp';
+    location.href = './preguntasPendientes.html';
 }
 
 function cerrarSesion() {
-    location.href = '../CerrarSesion';
+    location.href = '../index.html';
 }

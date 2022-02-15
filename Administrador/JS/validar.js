@@ -87,7 +87,8 @@ function registrardr() {
     if (validarnombre(nombre) && validarfecha(fecha) && validarcorreo(email) && validarcontrasena(pass) && (pass = confpass)) {
         
         setTimeout(function() {
-            document.registrarDoc.submit();
+           // document.registrarDoc.submit();
+           location.href = 'adminDoctores.html'
         }, 1000);
     } else if (pass != confpass) {
         Swal.fire({
@@ -107,18 +108,19 @@ function modificarcuentadr() {
     var pass = document.getElementById("password").value;
     if (validarnombre(nombre) && validarfecha(fecha) && validarcorreo(email) && validarcontrasena(pass)) {
         document.getElementById("modalR").classList.add(isVisible);
-        document.ModCuentaDoctor.submit();
+        //document.ModCuentaDoctor.submit();
+        location.href = 'adminDoctores.html'
     }
 }
 
 function modificarcuentaAdmin() {
     var fecha = document.getElementById("fechaAdmin").value;
-    var email = document.getElementById("correoadmin").value;
     var nombre = document.getElementById("nombreadmin").value;
-    if (validarnombre(nombre) && validarfecha(fecha) && validarcorreo(email)) {
+    if (validarnombre(nombre) && validarfecha(fecha)) {
         document.getElementById("modalR").classList.add(isVisible);
         setTimeout(function() {
-            document.ModCuentaAdmin.submit();
+            //document.ModCuentaAdmin.submit();
+            location.href = 'cuentaAdmin.html'
         }, 2000);
         
     }
@@ -134,7 +136,8 @@ function modificarContra() {
         
         //
         setTimeout(function() {
-            document.ModiContraAdmin.submit();
+            //document.ModiContraAdmin.submit();
+            location.href = 'cuentaAdmin.html'
         }, 2000);
     } else if (pass != confpass) {
         Swal.fire({
