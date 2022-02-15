@@ -18,7 +18,8 @@ function validarIS() {
     var contra = document.getElementById('IScontra').value;
     if (validarcorreo(correo) && validarcontrasena(contra)) {
         setTimeout(function() {
-            document.iniciar.submit();
+            //document.iniciar.submit();
+            location.href = 'distribución.html'
         }, 1000);
     }
 }
