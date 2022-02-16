@@ -132,7 +132,7 @@ function modificarcuenta() {
         //document.modcuenta.submit;
         setTimeout(function() {
             //document.modicuenta.submit();
-            location.href= 'sesionUsuario.html'
+            location.href= 'cuenta.html'
         }, 2000);
     }
 }
@@ -152,7 +152,7 @@ function modificarContra() {
         //document.modcontra.submit;
         setTimeout(function() {
             //document.ModContra.submit();
-            location.href= 'sesionUsuario.html'
+            location.href= 'cuenta.html'
         }, 2000);
     }
 }
@@ -232,7 +232,7 @@ function RecuperarContra(){
             title: 'Oops...',
             text: 'No coinciden las nuevas contraseñas'
         });
-    } else if (validarcontrasena(pass) && validarcontrasena(antpass)) {
+    } else if (validarcontrasena(pass) && validarcontrasena(confpass)) {
         //document.modcontra.submit;
         setTimeout(function() {
             //document.ModContra.submit();
