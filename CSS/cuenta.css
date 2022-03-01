@@ -269,3 +269,38 @@ a:hover {
 button {
     cursor: pointer;
 }
+
+.fil{
+    margin-left: 15%;
+    width: 25%;
+    border-bottom: 2px solid #0066FF;
+    display: inline-block;
+    cursor: pointer;
+    margin-right:5%;
+}
+
+.fil:hover{
+    border-bottom: 2px solid #ff00bfd7;
+}
+
+.fil2{
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 25%;
+    border-bottom: none;
+    display: inline-block;
+    cursor: pointer
+}
+
+.fil2:hover{
+    border-bottom: 2px solid #ff00bfd7;
+}
+
+.cuen , .esta{
+    display: inline;
+    width: 100%;
+}
+
+.cuen{
+    display:none;
+}

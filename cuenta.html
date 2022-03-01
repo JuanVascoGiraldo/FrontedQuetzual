@@ -29,66 +29,78 @@
             </a>
         </div>
     </header>
-    <div class="datos">
-        <p>Nombre: GutierrezBueno </p>
-        <p>Correo electronico:gutierrez.bueno.elizabeth.andrea@gmail.com </p>
-        <p>Fecha de nacimiento:17-09-2004 </p>
-        <p>Sexo: Prefiero no Decirlo</p>
+    <div class="filcuenta">
+        <div class="fil" id="fil" onclick="estadistica()"><h3>Estadistica</h3></div>
+        <div class="fil2" id="fil2" onclick="cuenta()"><h3>Cuenta</h3></div>
     </div>
-    <div class="title">
-        <h1>Modificar Cuenta</h1>
-        <hr>
-    </div>
-    <div class="flex">
-        <div class="card">
-            <form action="ModifcarCuenta" name="modicuenta">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre de Usuario" class="input" value="GutierrezBueno">
-                <br>
-                <label for="" class="article">Fecha de nacimiento</label><br>
-                <input type="date" name="fecha" id="fecha" class="input" value="">
-                <br>
-                <label for="" class="article">Sexo</label>
-                <br>
-                <select name="sexo" id="sexo" class="select">
-                <option value="3" >Masculino</option>
-                <option value="2" >Femenino</option>
-                <option value="1" selected >Prefiero no decirlo</option>
-            </select>
-                <button type="button" id="modificar" class="submit" onclick="modC()">Modificar Cuenta</button>
-            </form>
-            <hr width="90%">
-            <form action="" name="modemail">
-                <input type="email" name="correo" id="correo" placeholder="Correo electronico" class="input" value="gutierrez.bueno.elizabeth.andrea@gmail.com">
-                <button type="button" id="modificar" class="submit" onclick="ModCorreo()">Modificar Correo</button>
-            </form>
+    <br>
+    <br>
+    <div class="cuen" id="cuen">
+        <div class="datos">
+            <p>Nombre: GutierrezBueno </p>
+            <p>Correo electronico:gutierrez.bueno.elizabeth.andrea@gmail.com </p>
+            <p>Fecha de nacimiento:17-09-2004 </p>
+            <p>Sexo: Prefiero no Decirlo</p>
         </div>
-        <div class="card">
-            <form action="ModificarContra" name="ModContra">
-                <input type="password" name="pass" id="antpass" placeholder="Contraseña Actual" class="input">
-                <input type="password" name="newpass" id="password" placeholder="Nueva Contraseña" class="input">
-                <input type="password" name="" id="confpass" placeholder="Confirmar Nueva Contraseña" class="input">
-                <button type="button" id="modPassword" class="submit" onclick="modP()">Cambiar contraseña</button>
-            </form>
+        <div class="title">
+            <h1>Modificar Cuenta</h1>
+            <hr>
         </div>
-    </div>
-    <div class="title">
-        <h1>Aprovechamiento del sistema</h1>
-        <hr>
-    </div>
-    <div class="explicación">
-        <p>
-            Las siguientes graficas muestran los resultados de acuerdo a las preguntas respondidas y las rechazadas, a su vez tambien se muestra la comparación de las preguntas que has calificado con respecto a la utilidad que te han dado al igual de estar clasificada
-            por categoria.
-        </p>
-    </div>
-    <div class="flex">
-        <div class="bar">
-            <canvas id="myChart"></canvas>
-        </div>
-        <div class="pie">
-            <canvas id="piechart"></canvas>
+        <div class="flex">
+            <div class="card">
+                <form action="ModifcarCuenta" name="modicuenta">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre de Usuario" class="input" value="GutierrezBueno">
+                    <br>
+                    <label for="" class="article">Fecha de nacimiento</label><br>
+                    <input type="date" name="fecha" id="fecha" class="input" value="">
+                    <br>
+                    <label for="" class="article">Sexo</label>
+                    <br>
+                    <select name="sexo" id="sexo" class="select">
+                    <option value="3" >Masculino</option>
+                    <option value="2" >Femenino</option>
+                    <option value="1" selected >Prefiero no decirlo</option>
+                </select>
+                    <button type="button" id="modificar" class="submit" onclick="modC()">Modificar Cuenta</button>
+                </form>
+                <hr width="90%">
+                <form action="" name="modemail">
+                    <input type="email" name="correo" id="correo" placeholder="Correo electronico" class="input" value="gutierrez.bueno.elizabeth.andrea@gmail.com">
+                    <button type="button" id="modificar" class="submit" onclick="ModCorreo()">Modificar Correo</button>
+                </form>
+            </div>
+            <div class="card">
+                <form action="ModificarContra" name="ModContra">
+                    <input type="password" name="pass" id="antpass" placeholder="Contraseña Actual" class="input">
+                    <input type="password" name="newpass" id="password" placeholder="Nueva Contraseña" class="input">
+                    <input type="password" name="" id="confpass" placeholder="Confirmar Nueva Contraseña" class="input">
+                    <button type="button" id="modPassword" class="submit" onclick="modP()">Cambiar contraseña</button>
+                </form>
+            </div>
         </div>
     </div>
+    <div class="esta" id="esta">
+        <div class="title">
+                <h1>Aprovechamiento del sistema</h1>
+                <hr>
+            </div>
+            <div class="explicación">
+                <p>
+                    Las siguientes graficas muestran los resultados de acuerdo a las preguntas respondidas y las rechazadas, a su vez tambien se muestra la comparación de las preguntas que has calificado con respecto a la utilidad que te han dado al igual de estar clasificada
+                    por categoria.
+                </p>
+            </div>
+            <div class="flex">
+                <div class="bar">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="pie">
+                    <canvas id="piechart"></canvas>
+                </div>
+            </div>
+    </div>
+    
+    
     
     <div class="modal" id="modalR">
         <div class="card">
@@ -208,6 +220,57 @@ var piechart = new Chart(ctx, {
         }
     %>
 -->
+
+<script>
+    function estadistica(){
+        document.getElementById("esta").style.display = "inline";
+        document.getElementById("cuen").style.display = "none";
+        document.getElementById("fil").style.borderBottom = "2px solid #0066FF";
+        document.getElementById("fil2").style.borderBottom = "none";
+        document.getElementById("fil").style.hover = "border-bottom: 2px solid #ff00bfd7"
+
+        document.getElementById("fil").addEventListener("mouseover", function() {
+            document.getElementById("fil").style.borderBottom  = "2px solid #ff00bfd7";
+        });
+            
+        document.getElementById("fil2").addEventListener("mouseout", function() {
+            document.getElementById("fil2").style.borderBottom = "none";
+        });
+
+        document.getElementById("fil2").addEventListener("mouseover", function() {
+            document.getElementById("fil2").style.borderBottom  = "2px solid #ff00bfd7";
+        });
+            
+        document.getElementById("fil").addEventListener("mouseout", function() {
+            document.getElementById("fil").style.borderBottom = "2px solid #0066FF";
+        });
+    }
+
+    function cuenta(){
+        document.getElementById("esta").style.display = "none";
+        document.getElementById("cuen").style.display = "inline";
+        document.getElementById("fil").style.borderBottom = "none";
+        document.getElementById("fil2").style.borderBottom = "2px solid #0066FF";
+
+        document.getElementById("fil").addEventListener("mouseover", function() {
+            document.getElementById("fil").style.borderBottom  = "2px solid #ff00bfd7";
+        });
+            
+        document.getElementById("fil").addEventListener("mouseout", function() {
+            document.getElementById("fil").style.borderBottom = "none";
+        });
+
+        document.getElementById("fil2").addEventListener("mouseover", function() {
+            document.getElementById("fil2").style.borderBottom  = "2px solid #ff00bfd7";
+        });
+            
+        document.getElementById("fil2").addEventListener("mouseout", function() {
+            document.getElementById("fil2").style.borderBottom = "2px solid #0066FF";
+        });
+
+    }
+</script>
+
 </body>
 
 </html>
