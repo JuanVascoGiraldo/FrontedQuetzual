@@ -46,35 +46,36 @@
         <select name="filtro" id="filtro" onchange="javascript:console.log(this.value)">
             <option disabled hidden>Selecciona el tema de tu interes</option>
             <!--Aqui se va a ocupar ajax para los filtros-->
-            <option value="sesionUsuario.html" >Todos</option>
-            <option value="sesionUsuario.html" >Enfermedades de transmisión sexual</option>
-            <option value="sesionUsuario.html" >Anticonceptivos</option>
-            <option value="sesionUsuario.html" >Embarazo</option>
-            <option value="sesionUsuario.html" >Salud sexual femenina</option>
-            <option value="sesionUsuario.html" >Salud sexual masculina</option>
+            <option value="0" >Todos</option>
+            <option value="1" >Enfermedades de transmisión sexual</option>
+            <option value="5" >Anticonceptivos</option>
+            <option value="2" >Embarazo</option>
+            <option value="3" >Salud sexual femenina</option>
+            <option value="4" >Salud sexual masculina</option>
         </select>
     </div>
-    <div class="main_container">
-        <div class="mini_header">
-            <h2>18 años</h2>
-            <h2>Metodos Anticonceptivos</h2>
-            <h2>2 Respuestas</h2>
-        </div>
-        <div class="pregunta">
-            <img src="./img/bxs-user.svg">
-            <div class="preguntas">
-                <h3>¿Que metodos Anticonceptivos existen?</h3>
+    <div id="cambiar">
+        <div class="main_container">
+            <div class="mini_header">
+                <h2>18 años</h2>
+                <h2>Metodos Anticonceptivos</h2>
+                <h2>2 Respuestas</h2>
+            </div>
+            <div class="pregunta">
+                <img src="./img/bxs-user.svg">
+                <div class="preguntas">
+                    <h3>¿Que metodos Anticonceptivos existen?</h3>
+                </div>
+            </div>
+            <div class="respuesta">
+                <a href="./respuestasPregunta.html">Ver respuestas</a>
             </div>
         </div>
-        <div class="respuesta">
-            <a href="./respuestasPregunta.html">Ver respuestas</a>
+        <div class="vacio">
+            <p>No hay Preguntas Actualmente</p>
+            <img src="./img/sinprepuusu.svg">
         </div>
     </div>
-    <div class="vacio">
-        <p>No hay Preguntas Actualmente</p>
-        <img src="./img/sinprepuusu.svg">
-    </div>
-    
     <script src="./JS/validar.js"></script>
     <script src="./JS/sweetAlert.js"></script>
     <script src="./JS/funcionModal.js"></script>
