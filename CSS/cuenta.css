@@ -13,8 +13,8 @@ body {
 }
 
 .logo {
-    height: 100px;
-    padding: 10px;
+    height: 80px;
+    padding: 5px;
     width: auto;
     margin-left: 15px;
 }
@@ -52,7 +52,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin-bottom: 10px;
 }
 
@@ -98,10 +98,10 @@ article {
         font-weight: 700;
     }
     .logo {
-        width: 250px;
+        width: 90px;
         height: auto;
         margin: auto;
-        padding: 15px;
+        padding: 10px;
     }
     .menu_content {
         font-size: 1rem;
@@ -265,7 +265,7 @@ a {
 }
 
 a:hover {
-    border-bottom: 5px solid #1C6EA4;
+    border-bottom: 5px solid #ffffff;
 }
 
 button {
@@ -319,4 +319,13 @@ button {
     margin-left: 15%;
     margin-right: 15%;
     background-color: rgba(255, 0, 0, 0.25);
+}
+
+.divmostrar{
+    overflow: hidden;
+
+}
+
+.mostrar{
+    visibility: hidden;
 }

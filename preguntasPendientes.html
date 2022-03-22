@@ -16,26 +16,33 @@
 <body>
     <header class="header">
         <nav class="navegacion">
-            <img src="./img/logotipo.png" alt="Logotipo oficial de Quetzual" class="logo">
-            <article>Mis preguntas</article>
-            <button class="cs" onclick="cerrarSesion()">Cerrar sesión</button>
+            <img src="./img//Logo.png" alt="Logotipo oficial de Quetzual" class="logo">
+            <article><b>QUETZUAL</b></article>
+            <div class="menu">
+                <a href="./sesionUsuario.html">
+                    <img src="./img/bx-home.png" alt="Imagen ">
+                </a>
+                <a href="./cuenta.jsp">
+                    <img src="./img/bx-user-circle.png" width="40" alt="Signo de pregunta" class="svg">
+                </a>
+                <a href="./hacerPregunta.html">
+                    <img src="./img/bx-edit-alt.png" alt="Signo de editar" class="svg">
+                </a>
+                <a href="./index.html">
+                    <img src="./img/salir.png" alt="Signo de pregunta" class="svg">
+                </a>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+
+            </div>
         </nav>
-        <div class="menu">
-            <a href="./sesionUsuario.html">
-                <img src="./img/bx-home.svg" alt="Imagen inicio"> Inicio
-            </a>
-            <a href="./cuenta.html">
-                <img src="./img/bx-user-circle.svg" width="40" alt="Signo de pregunta" class="svg"> Mi cuenta
-            </a>
-            <a href="./hacerPregunta.html">
-                <img src="./img/bx-edit-alt.svg" alt="Signo de editar" class="svg"> Quiero preguntar
-            </a>
-        </div>
     </header>
+    <h1 style="text-align:center">Mis Preguntas</h1>
     <div class="filtro">
         <select name="filtro" id="filtro" onchange="javascript:location.href = this.value;">
             <option selected disabled hidden>Selecciona el filtro de preguntas</option>
-            <option value="0">Hacer pregunta</option>
             <option value="1">Preguntas Respondidas</option>
             <option value="2">Preguntas rechazadas</option>
             <option value="3" selected>Preguntas pendientes</option>
